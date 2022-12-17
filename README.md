@@ -1,3 +1,11 @@
+# About the Project
+
+Metroway is a platform where you primarily book your train tickets online apart from planning your holidays, ordering meals, and booking train tourism packages. It is build using ReactJs based on the design: [Metroway - Train Ticket booking website](https://www.figma.com/community/file/1176001235521035256) by [Revanth](https://www.figma.com/@revanth_ui)
+
+# Libraries used in the Project
+
+- [create-react-app](https://create-react-app.dev/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
