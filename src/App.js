@@ -1,4 +1,4 @@
-import "./App.css";
+import "assets/scss/app.scss";
 
 // Handling Routing
 import { RouterProvider } from "react-router-dom";
