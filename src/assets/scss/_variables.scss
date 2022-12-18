@@ -1,0 +1,21 @@
+// Defining color variables:
+
+// Primary Colors
+$--Black: --Black;
+$--Dark-Grey: --Dark-Grey;
+$--Light-Grey: --Light-Grey;
+$--White: --White;
+$--Blue: --Blue;
+
+// ---------------------------------------------------------------------------------------------------------
+// Light
+$theme-map-light: (
+    // Primary Colors
+    $--Black: #202020,
+    $--Dark-Grey: #404040,
+    $--Light-Grey: #808080,
+    $--White: #FFFFFF,
+    $--Blue: #0578FF,
+);
+
+// ---------------------------------------------------------------------------------------------------------
