@@ -1,0 +1,13 @@
+@import "src/assets/scss/base";
+.logo {
+    @include textStyling('normal', 600, 24px,36px);
+    color: var($--Black);
+    span {
+        &.white {
+            color: var($--White);
+        }
+        &.blue {
+            color: var($--Blue);
+        }
+    }
+}

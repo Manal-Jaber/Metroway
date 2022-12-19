@@ -1,0 +1,31 @@
+@import "src/assets/scss/base";
+.email-submission {
+    $--icon: --icon;
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        @include textStyling('normal', 500, 14px,21px);
+        color: var($--White);
+        &::placeholder {
+            color: var($--White);
+            @include textStyling('normal', 500, 14px,21px);
+        }
+    }
+    .submit {
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+    .submit-line {
+        padding: 1rem 1.5rem;
+        border-bottom: 1.5px solid var($--White);
+        width: 100%;
+        @media (min-width: 768px) {
+            min-width: 15rem;
+        }
+        @media (min-width: 1024px) {
+            min-width: 25rem;
+        }
+    }
+}

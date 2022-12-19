@@ -4,3 +4,10 @@
       #{$key}: $value;
     }
   }
+// For styling text
+  @mixin textStyling($style, $weight, $size, $lineHeight) {
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+  }

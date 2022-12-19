@@ -1,0 +1,98 @@
+@import "src/assets/scss/base";
+.footer {
+    background-color: var($--Blue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        padding: 6.25rem;
+    }
+    .contact-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+        >:nth-child(n+2) {
+            margin-top: 1rem;
+            @media (min-width: 768px) {
+                margin-top: unset;
+                margin-left: 3rem;
+            }
+        }
+        .right-side {
+            >:nth-child(n+2) {
+                @media (min-width: 768px) {
+                    margin-left: 3.75rem;
+                }
+            }
+        }
+        .description {
+            color: var($--White);
+            .description-title {
+                @include textStyling('normal', 600, 24px,36px);
+
+            }
+            .description-text {
+                @include textStyling('normal', 500, 14px,21px);
+            }
+        }
+    }
+    .pages-row {
+        margin-top: 1rem;
+        @media (min-width: 768px) {
+            margin-top: 3.75rem;
+        }
+        ul {
+            list-style: none;
+            padding-left: unset;
+            margin-bottom: unset;
+            @include textStyling('normal', 500, 16px,24px);
+            &:nth-child(n+2) {
+                margin-top: 1rem;
+                @media (min-width: 768px) {
+                    margin-top: unset;
+                }
+            }
+            li {
+                width: fit-content;
+                a {
+                    color: var($--White);
+                    text-decoration: none;
+                }
+            }
+        }
+        .pages-section {
+            li {
+                &:nth-child(2n) {
+                    @media (min-width: 576px) {
+                        margin-left: 1rem;
+                    }
+                    @media (min-width: 768px) {
+                        margin-left: unset;
+                    }
+                }
+                &:nth-child(n+2) {
+                    @media (min-width: 1200px) {
+                        margin-left: 3.75rem;
+                    }
+                }
+                @media (min-width: 576px) {
+                    width: calc((100% - 1rem) / 2 );
+                }
+                @media (min-width: 1200px) {
+                    width: auto;
+                }
+            }
+
+        }
+        .social-media-section {
+            >:nth-child(n+2) {
+                @media (min-width: 768px) {
+                    margin-left: 1.875rem;
+                }
+            }
+        }
+    }
+}
