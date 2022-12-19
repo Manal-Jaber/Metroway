@@ -1,15 +1,9 @@
 @import "src/assets/scss/base";
 .email-submission {
-    $--icon: --icon;
     input {
-        background-color: transparent;
-        border: none;
-        outline: none;
-        @include textStyling('normal', 500, 14px,21px);
         color: var($--White);
         &::placeholder {
             color: var($--White);
-            @include textStyling('normal', 500, 14px,21px);
         }
     }
     .submit {

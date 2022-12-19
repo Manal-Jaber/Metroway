@@ -1,0 +1,30 @@
+@import "src/assets/scss/base";
+.bookings-form {
+    max-width: 100%;
+    @media (min-width: 768px) {
+        max-width: 40rem;
+
+    }
+    >:nth-child(n){
+        margin-top: 1.875rem;
+    }
+    .tag {
+        color: var($--White);
+        background-color: var($--Blue);
+        @include textStyling('normal', 500, 16px,24px);
+        border-radius: 30px;
+        padding: 0.625em 1.25em;
+    }
+    .title {
+        @include textStyling('normal', 500, 32px,44px);
+        color: var($--Black);
+        margin-bottom: unset;
+        @media (min-width: 1200px) {
+            @include textStyling('normal', 500, 64px,90px);
+        }
+    }
+    .description {
+        @include textStyling('normal', 400, 16px,24px);
+        color: var($--typography-2);
+    }
+}

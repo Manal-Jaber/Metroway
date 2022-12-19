@@ -1,0 +1,20 @@
+@import "src/assets/scss/base";
+.form {
+    margin-left: auto;
+    margin-right: auto;
+    .form-body {
+        input {
+            padding: 1rem 1.5rem;
+            border-bottom: 1.5px solid var($--Light-Grey);
+        }
+        .submit {
+            background-color: var($--Blue);
+            padding: 1rem;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            @include textStyling('normal', 500, 14px,21px);
+            color: var($--White);
+        }
+    }
+}

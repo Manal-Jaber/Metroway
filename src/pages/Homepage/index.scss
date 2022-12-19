@@ -1,0 +1,16 @@
+@import "src/assets/scss/base";
+.homepage {
+    --bs-gutter-x : 0;
+    padding: 2rem;
+    @media (min-width: 768px) {
+        padding: unset;
+        padding-left: 6.25rem;
+        padding-bottom: 3rem;
+    }
+
+    .train {
+        @media (min-width: 768px) {
+            margin-top: calc(-5rem - 36px);
+        }
+    }
+}
