@@ -1,6 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 
 // pages
+import Header from "components/shared/Header";
+import Footer from "components/shared/Footer";
 /* Import any new page here  and then add it to the router array as an object**/
 import Homepage from "./pages/Homepage";
 import AboutUs from "./pages/AboutUs";
@@ -39,16 +41,30 @@ export const pages = [
   },
   {
     path: "/customer-service",
-    name: <CustomerService />,
+    name: "CustomerService",
     element: <CustomerService />,
   },
 ];
 
+// To add Header and/or footer to pages
+const CommonPage = ({ page }) => {
+  return (
+    <div className="page">
+      <Header />
+      {page}
+      <Footer />
+    </div>
+  );
+};
+
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Homepage />,
+    element: <CommonPage page={<Homepage />} />,
     errorElement: <ErrorPage />,
   },
-  ...pages,
+  ...pages.map((page) => {
+    const { path, element } = page;
+    return { path, element: <CommonPage page={element} /> };
+  }),
 ]);
