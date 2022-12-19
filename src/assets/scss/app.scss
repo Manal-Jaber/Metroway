@@ -3,4 +3,7 @@
 .App {
   @include spread-map($theme-map-light);
   font-family: 'Poppins', sans-serif;
+  p {
+    margin: unset;
+  }
 }

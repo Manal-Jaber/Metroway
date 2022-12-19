@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+/** Using bootstrap is completely optional. It's used here to provide a clean layout for samples, without needing extra CSS in the sample app. Remove it in package.json as well if it's removed here. */
+import "bootstrap/dist/css/bootstrap.css";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

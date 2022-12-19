@@ -4,8 +4,12 @@ Metroway is a platform where you primarily book your train tickets online apart 
 
 # Libraries used in the Project
 
-- [create-react-app](https://create-react-app.dev/)
-- [react-router-dom](https://reactrouter.com/)
+- [create-react-app](https://create-react-app.dev/): used to create a react template
+- [react-router-dom](https://reactrouter.com/): used for routing
+- [bootstrap](https://getbootstrap.com/): used as a css framework
+- [sass](https://www.npmjs.com/package/sass): used for more functionality in css
+- [clsx](https://www.npmjs.com/package/clsx): used for conditional classes
+- [formik](https://formik.org/): used for forms validation
 
 # Getting Started with Create React App
 
