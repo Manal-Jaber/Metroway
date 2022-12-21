@@ -7,6 +7,11 @@ import "./index.scss";
 const FormBody = () => {
     return (
         <Formik
+        initialValues={{
+          station: '',
+          junction: '',
+          date: '',
+        }}
         onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
             alert(JSON.stringify(values, null, 2));
